@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3991310881,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "verify user name and last name",
+        "description": "",
+        "id": "login-to-prestashop;verify-user-name-and-last-name",
+        "after": [
+          {
+            "result": {
+              "duration": 98845699,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3725191888,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "Login_Step_Definitions.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1644206760,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user logs in using username \"nitoyey@dumoac.net\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nitoyey@dumoac.net\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 66
+                }
+              ],
+              "location": "Login_Step_Definitions.the_user_logs_in_using_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30409418,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "users full name \"ibadat\" \"kyzy\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ibadat\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"kyzy\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Login_Step_Definitions.users_full_name_should_be_displayed(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testingTech"
+          }
+        ]
+      }
+    ],
+    "name": "login to prestashop",
+    "description": "",
+    "id": "login-to-prestashop",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
